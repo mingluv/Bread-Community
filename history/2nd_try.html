@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>COCO Bread Landing Page</title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    body, html {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #ceb180; /* 배경색 설정 */
+    }
+    .container {
+        max-width: 1200px; /* 적당한 최대 너비 설정 */
+        margin: 0 auto; /* 중앙 정렬 */
+        padding: 20px;
+        display: flex; /* Flexbox를 사용한 정렬 */
+        align-items: center; /* 세로 중앙 정렬 */
+        justify-content: space-between; /* 자식 요소들 사이의 간격을 균등하게 설정 */
+    }
+    header {
+        background: #fff;
+        padding: 20px 0;
+        text-align: center;
+        width: 100%; /* 너비를 100%로 설정하여 전체 너비를 차지하게 함 */
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    header h1 {
+        margin: 0;
+        font-size: 2.5em;
+    }
+    .content-image {
+        flex: 1; /* Flexbox 아이템이 차지할 수 있는 공간을 균등하게 설정 */
+        text-align: center; /* 이미지 중앙 정렬 */
+    }
+    .content-image img {
+        max-width: 100%; /* 이미지가 컨테이너를 벗어나지 않도록 최대 너비 설정 */
+        height: auto;
+    }
+    .content-text {
+        flex: 1; /* 텍스트 영역도 이미지 영역과 동일한 비율로 설정 */
+        padding-left: 20px; /* 텍스트 영역과 이미지 영역 사이의 간격을 줌 */
+    }
+    .content-text p {
+        font-size: 1.2em;
+        line-height: 1.5;
+        color: #333;
+    }
+    .join-now {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .join-now button {
+        padding: 10px 20px;
+        font-size: 1.5em;
+        color: white;
+        background: #e67e22;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+    .join-now button:hover {
+        background: #cf6d17;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>COCO Bread</h1>
+</header>
+
+<div class="container">
+    <div class="content-image">
+        <img src="https://i.namu.wiki/i/KM3Rk0zmmbUoAJLbFOg3v8zC2G0jD_MgdTQHwxGNmYA3Jw-ulrC2A4aaaXMiEo-WzMu9v1UfaYEE5hMwLyfo_zULez10-PdsT4z8F7-OeFpn7kEltXX1Zhr7mYHRfmjZbmEkE1o0z4JOC9XQccJYJw.webp" alt="Delicious COCO Bread">
+    </div>
+    <div class="content-text">
+        <p>Join our COCO Bread community today and enjoy the finest selection of artisan breads. Share your recipes, tips, and stories with fellow bread lovers.</p>
+    </div>
+</div>
+
+<div class="join-now">
+    <button>Join Now</button>
+</div>
+
+</body>
+</html>

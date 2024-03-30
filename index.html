@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>COCO Bread Landing Page</title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    body, html {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #ceb180;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    header {
+        background: #f5f5f0;
+        padding: 20px 0;
+        display: flex; /* 헤더를 flex 컨테이너로 설정 */
+        align-items: center; /* 항목들을 세로 중앙에 정렬 */
+        justify-content: space-between; /* 항목들 사이에 공간을 균등하게 배분 */
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    header img {
+        height: 50px; /* 로고 이미지의 높이를 조절 */
+        margin-left: 20px; /* 왼쪽 여백 추가 */
+    }
+    header h1 {
+        margin: 0 auto 0 20px; /* 제목에 자동 여백 추가로 중앙 정렬, 왼쪽에 공간 추가 */
+        font-size: 2.5em;
+    }
+
+    .content-image, .content-text {
+        flex: 1;
+        padding: 20px;
+    }
+    .content-image img {
+        max-width: 100%;
+        height: auto;
+    }
+    .content-text p {
+        font-size: 1.2em;
+        line-height: 1.5;
+        color: #333;
+    }
+    .join-now {
+        text-align: center;
+        width: 100%;
+        padding: 20px;
+    }
+    .join-now button {
+        padding: 10px 20px;
+        font-size: 1.5em;
+        color: white;
+        background: #e67e22;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+    .join-now button:hover {
+        background: #cf6d17;
+    }
+
+    /* 반응형 레이아웃을 위한 미디어 쿼리 */
+    @media (max-width: 768px) {
+        .container {
+            flex-direction: column;
+        }
+        .content-image, .content-text {
+            width: 100%;
+            padding: 0;
+            text-align: center;
+        }
+        .content-image {
+            order: -1; /* 이미지가 텍스트 위로 올라가도록 함 */
+        }
+        
+    }
+
+
+
+
+    }
+</style>
+</head>
+<body>
+    <header>
+        <img src="./LOGO.webp" alt="COCO Bread LOGO">
+        <h1>COCO Bread</h1>
+    </header>
+
+<div class="container">
+    <div class="content-image">
+        <img src="./breadsample.webp" alt="Delicious COCO Bread">
+    </div>
+    <div class="content-text">
+        <h2>맛있는 추억을 굽다, <br> COCO Bread의 따스한 커뮤니티 </br> </h2>
+        <p>우리는 빵을 사랑하는 모든 이들을 위한 공간입니다. 신선한 재료로 정성스레 만든 수제 빵의 맛과 빵집가의 비법을 나누며, 각자의 이야기를 통해 더욱 풍부한 삶을 경험할 수 있습니다.</p>
+    </div>
+    
+</div>
+
+<div class="join-now">
+    <a href="https://www.paris.co.kr/" target="_blank"><button>Join Now</button></a>
+</div>
+
+</body>
+</html>
